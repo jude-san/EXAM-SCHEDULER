@@ -14,11 +14,11 @@ class CreateDurationsTable extends Migration
     public function up()
     {
         Schema::create('durations', function (Blueprint $table) {
-            $table->id();
-            $table->time(starttime);
-            $table->time(endtime);
-            $table->date(datestart);
-            $table->date(deteend);
+            $table->integer('durations_id');
+            $table->time('start_time');
+            $table->time('end_time');
+            $table->date('date_start');
+            $table->date('dete_end');
             $table->timestamps();
         });
     }

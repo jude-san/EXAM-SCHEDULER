@@ -14,8 +14,8 @@ class CreateCollegeClassesTable extends Migration
     public function up()
     {
         Schema::create('college_classes', function (Blueprint $table) {
-            $table->id();
-            $table->varchar(college_class_name);
+            $table->integer('college_classes_id');
+            $table->string('college_class_name');
             $table->timestamps();
         });
     }
